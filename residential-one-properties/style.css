@@ -2558,7 +2558,7 @@ a:hover, a:active {
 .site-navigation-frontpage a {
   text-decoration: none;
   display: block;
-  color: #bbbdc0;
+  color: #6d6e70;
   font-family: ralewayregular;
 }
 /* line 191, sass/navigation/_menus.scss */
@@ -2729,7 +2729,7 @@ a:hover, a:active {
 }
 /* line 357, sass/navigation/_menus.scss */
 .alt-navigation .current_page_item > a, .alt-navigation a:hover {
-  background-color: #bbbdc0;
+  background-color: #6d6e70;
   color: #FFF;
 }
 /* line 362, sass/navigation/_menus.scss */
@@ -3303,7 +3303,7 @@ object {
 #masthead {
   background-color: #fff;
   padding-top: 10px;
-  color: #bbbdc0;
+  color: #6d6e70;
 }
 /* line 6, sass/masthead/_masthead.scss */
 #masthead:after {
@@ -3529,7 +3529,7 @@ object {
   }
   /* line 113, sass/colophon/_colophon.scss */
   #colophon svg {
-    fill: #bbbdc0;
+    fill: #6d6e70;
   }
 }
 @media (min-width: 750px) {
@@ -3668,7 +3668,7 @@ object {
 --------------------------------------------------------------*/
 /* line 1, sass/page-templates/_contact.scss */
 .page-template-page-contact {
-  color: #bbbdc0;
+  color: #6d6e70;
 }
 /* line 4, sass/page-templates/_contact.scss */
 .page-template-page-contact #content {
@@ -3742,7 +3742,7 @@ object {
 }
 /* line 31, sass/page-templates/_floor-plans.scss */
 .page-template-page-floor-plans #floor-plan-listing #plan-nav a {
-  color: #bbbdc0;
+  color: #6d6e70;
   text-decoration: none;
   font-family: ralewaymedium;
 }
@@ -3765,16 +3765,13 @@ object {
 /* line 52, sass/page-templates/_floor-plans.scss */
 .page-template-page-floor-plans #floor-plan-listing .floor-plan.active {
   opacity: 1;
+  color: #6d6e70;
 }
-/* line 56, sass/page-templates/_floor-plans.scss */
-.page-template-page-floor-plans #floor-plan-listing .floor-plan span {
-  display: block;
-}
-/* line 60, sass/page-templates/_floor-plans.scss */
+/* line 57, sass/page-templates/_floor-plans.scss */
 .page-template-page-floor-plans #floor-plan-listing .floor-plan h3 {
   color: #c6883f;
 }
-/* line 64, sass/page-templates/_floor-plans.scss */
+/* line 61, sass/page-templates/_floor-plans.scss */
 .page-template-page-floor-plans #floor-plan-listing .floor-plan .plan-img {
   margin-top: 1.5em;
   display: block;
@@ -3788,7 +3785,7 @@ object {
   }
 }
 @media (min-width: 950px) {
-  /* line 78, sass/page-templates/_floor-plans.scss */
+  /* line 75, sass/page-templates/_floor-plans.scss */
   .page-template-page-floor-plans .flex {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -3803,38 +3800,38 @@ object {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
-  /* line 89, sass/page-templates/_floor-plans.scss */
+  /* line 86, sass/page-templates/_floor-plans.scss */
   .page-template-page-floor-plans .flex .flex-item {
     -ms-flex: 1 1 50%;
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 50%;
             flex: 1 1 50%;
   }
-  /* line 94, sass/page-templates/_floor-plans.scss */
+  /* line 91, sass/page-templates/_floor-plans.scss */
   .page-template-page-floor-plans .flex #floor-plan-listing, .page-template-page-floor-plans .flex #article-wrapper {
     padding: 0;
   }
-  /* line 98, sass/page-templates/_floor-plans.scss */
+  /* line 95, sass/page-templates/_floor-plans.scss */
   .page-template-page-floor-plans .flex #floor-plan-listing {
     -ms-flex-order: 1;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
             order: 1;
   }
-  /* line 102, sass/page-templates/_floor-plans.scss */
+  /* line 99, sass/page-templates/_floor-plans.scss */
   .page-template-page-floor-plans .flex #floor-plan-listing > div {
     padding: 30px;
     float: right;
     max-width: 530px;
   }
-  /* line 109, sass/page-templates/_floor-plans.scss */
+  /* line 106, sass/page-templates/_floor-plans.scss */
   .page-template-page-floor-plans .flex #article-wrapper {
     -ms-flex-order: 5;
     -webkit-box-ordinal-group: 6;
     -webkit-order: 5;
             order: 5;
   }
-  /* line 113, sass/page-templates/_floor-plans.scss */
+  /* line 110, sass/page-templates/_floor-plans.scss */
   .page-template-page-floor-plans .flex #article-wrapper article {
     padding-left: 30px;
     padding-right: 30px;
@@ -3843,12 +3840,12 @@ object {
   }
 }
 @media (min-width: 1280px) {
-  /* line 127, sass/page-templates/_floor-plans.scss */
+  /* line 124, sass/page-templates/_floor-plans.scss */
   .page-template-page-floor-plans .flex #floor-plan-listing > div {
     padding: 30px 60px;
     max-width: 710px;
   }
-  /* line 131, sass/page-templates/_floor-plans.scss */
+  /* line 128, sass/page-templates/_floor-plans.scss */
   .page-template-page-floor-plans .flex #floor-plan-listing #plan-nav {
     font-size: .83em;
     margin: 0;
@@ -3857,7 +3854,7 @@ object {
         -ms-flex-pack: none;
             justify-content: none;
   }
-  /* line 140, sass/page-templates/_floor-plans.scss */
+  /* line 137, sass/page-templates/_floor-plans.scss */
   .page-template-page-floor-plans .flex #article-wrapper article {
     padding-left: 60px;
     padding-right: 60px;

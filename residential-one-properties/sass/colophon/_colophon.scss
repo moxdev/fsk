@@ -3,7 +3,7 @@
 	text-align: center;
 	padding-top: 10px;
 	background-color: $color__brand-3;
-	color: $color__text-alt;
+	color: $color__brand-5;
 
 	&:before {
 		content: '';
@@ -59,7 +59,7 @@
 		width: 29px;
 		height: 32px;
 		.cls-1 {
-			fill: $color__brand-4;
+			fill: $color__brand-5;
 		}
  	}
 
@@ -76,7 +76,7 @@
 			height: 21px;
 			display: block;
 			margin: 3px auto 0;
-			fill: $color__brand-4;
+			fill: $color__brand-5;
 		}
 	}
 

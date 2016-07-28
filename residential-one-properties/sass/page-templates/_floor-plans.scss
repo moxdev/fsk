@@ -51,10 +51,7 @@
 
 			&.active {
 				opacity:1;
-			}
-
-			span {
-				display: block;
+				color:$color__text-alt;
 			}
 
 			h3 {

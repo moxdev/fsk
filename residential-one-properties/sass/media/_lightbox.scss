@@ -1,0 +1,114 @@
+#imagelightbox {
+    position: fixed;
+    z-index: 9998;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+#imagelightbox-close {
+	position:absolute;
+	top:20px;
+	right:20px;
+	display:block;
+	height:40px;
+	z-index:9999;
+	border:none;
+	padding:0 12px;
+	color:#FFF;
+	font-size:1.5em;
+	text-align:center;
+}
+
+.imagelightbox-arrow {
+	position:fixed;
+	z-index:9999;
+	top:47%;
+	border:none;
+	padding-top:5px;
+	padding-bottom:10px;
+	padding:5px 10px 10px 12px;
+	font-size:1.5em;
+	line-height:1;
+	text-align:center;
+}
+
+.imagelightbox-arrow-left {
+	left:20px;
+}
+
+.imagelightbox-arrow-right {
+	right:20px;
+}
+
+#imagelightbox-close:hover, #imagelightbox-close:active {
+	cursor:pointer;
+}
+
+#imagelightbox-overlay {
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:9997;
+	background-color:rgba(255, 255, 255, .95);
+}
+
+#imagelightbox-caption {
+    text-align: center;
+    color: $color__brand-1;
+    position: fixed;
+    z-index: 10001;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 0.625em;
+}
+
+#imagelightbox-loading {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    z-index: 12000;
+    top: 50%;
+    left: 50%;
+    margin-top: -18px;
+    margin-left: -18px;
+    border: .25rem solid #666;
+    border-top-color: #FFF;
+    -ms-animation: spin 1s infinite linear;
+    -webkit-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
+}
+
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+  	transform: rotate(0deg);
+  }
+  100% {
+  	transform: rotate(360deg);
+  }
+}

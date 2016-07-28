@@ -1,0 +1,44 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.blog .hentry, .archive .hentry, .search .hentry {
+	margin: 0 0 2.25em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: .5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.entry-meta, .entry-footer {
+	font-size: .875em;
+}
+
+.entry-meta {
+	padding-top: .25em;
+}
+
+.entry-footer span {
+	display: table;
+}

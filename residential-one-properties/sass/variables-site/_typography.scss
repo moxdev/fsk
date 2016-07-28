@@ -1,0 +1,148 @@
+@font-face {
+	font-family: 'ralewaybold';
+	src: url('fonts/raleway-bold-webfont.woff2') format('woff2'),
+    	url('fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'ralewaylight';
+    src: url('fonts/raleway-light-webfont.woff2') format('woff2'),
+    	url('fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'ralewaymedium';
+	src: url('fonts/raleway-medium-webfont.woff2') format('woff2'),
+		url('fonts/raleway-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ralewayregular';
+	src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+		url('fonts/raleway-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ralewaysemibold';
+	src: url('fonts/raleway-semibold-webfont.woff2') format('woff2'),
+		url('fonts/raleway-semibold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?2zjfc3');
+    src: url('fonts/icomoon.eot?2zjfc3#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?2zjfc3') format('truetype'),
+        url('fonts/icomoon.woff?2zjfc3') format('woff'),
+        url('fonts/icomoon.svg?2zjfc3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-keys:before {
+    content: "\e900";
+}
+
+.icon-camera:before {
+    content: "\e901";
+}
+
+.icon-balloon:before {
+    content: "\e902";
+}
+
+.icon-star:before {
+    content: "\e903";
+}
+
+.icon-paw:before {
+    content: "\e904";
+}
+
+.icon-phone:before {
+    content: "\e905";
+}
+
+.icon-hamburger:before {
+    content: "\e906";
+}
+
+.site-navigation {
+    a:before {
+        font-family: 'icomoon' !important;
+    }
+    
+    .icon-keys a:before {
+        content: "\e900";
+    }
+
+    .icon-camera a:before {
+        content: "\e901";
+    }
+
+    .icon-balloon a:before {
+        content: "\e902";
+    }
+
+    .icon-star a:before {
+        content: "\e903";
+    }
+
+    .icon-paw a:before {
+        content: "\e904";
+    }
+
+    .icon-phone a:before {
+        content: "\e905";
+    }
+
+    .icon-hamburger a:before {
+        content: "\e906";
+    }
+}
+
+$font__main: 'ralewaylight', Arial, Helvetica, sans-serif;
+$font__main-alt-1: 'ralewayregular', Arial, Helvetica, sans-serif;
+$font__main-alt-2: 'ralewaymedium', Arial, Helvetica, sans-serif;
+$font__main-bold: 'ralewaybold', Arial, Helvetica, sans-serif;
+$font__headline: 'ralewaysemibold', Arial, Helvetica, sans-serif;
+$font__headline-alt-1: $font__main-bold;
+$font__nav: $font__main-bold;
+
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+b,
+strong,
+dt,
+th {
+	font-weight: normal;
+	font-family: $font__main-bold;
+}

@@ -1,0 +1,73 @@
+.page-template-page-photo-gallery {
+	.gallery-wrapper {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 20px;
+
+		.flex {
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display:flex;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+
+			.flex-item {
+				-ms-flex: 0 0 50%;
+				flex: 0 0 50%;
+
+				img, a {
+					display: block;
+				}
+			}
+
+			.flex-item:nth-child(even) a {
+				padding: 0 20px 20px 10px;
+			}
+
+			.flex-item:nth-child(odd) a {
+				padding: 0 10px 20px 20px;
+			}
+
+			@include respond-to(x-small) {
+				padding-left: 10px;
+				padding-right: 10px;
+				
+				.flex-item {
+					-ms-flex: 0 0 33.33%;
+					flex: 0 0 33.33%;
+				}
+
+				.flex-item:nth-child(even) a, .flex-item:nth-child(odd) a {
+					padding: 20px 10px 0 10px;
+				}
+			}
+
+			@include respond-to(small) {
+				padding-left: 20px;
+				padding-right: 20px;
+
+				.flex-item {
+					-ms-flex: 0 0 25%;
+					flex: 0 0 25%;
+				}
+			}
+
+			@include respond-to(x-large) {
+				.flex-item {
+					-ms-flex: 0 0 20%;
+					flex: 0 0 20%;
+				}
+			}
+		}
+	}
+
+	@include respond-to(medium) {
+		#content > .wrapper {
+			text-align: center;
+		}
+	}
+}

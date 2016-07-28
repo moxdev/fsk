@@ -1,0 +1,70 @@
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+.wrapper {
+	max-width: $width_max-content-width;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@include respond-to(small) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	@include respond-to(x-large) {
+		max-width: $width_max-content-width-lg;
+	}
+}
+
+#masthead .wrapper, #colophon .wrapper {
+	max-width: none;
+}
+
+.wrapper-wide {
+	max-width: $width_max-content-width-x-lg;
+}
+
+#content {
+	background-color: #FFF;
+}
+
+#content, #secondary {
+	@include font-size(.875);
+}
+
+@include respond-to(medium) {
+	#primary {
+		float: left;
+		width: 65%;
+	}
+
+	#secondary {
+		float: right;
+		width: 30%;
+		padding-top: 3em;
+	}
+
+	.page-template-frontpage #primary, .page-template-page-floor-plans #primary, .page-template-page-location #primary, .page-template-page-photo-gallery #primary {
+		float: none;
+		width: 100%;
+	}
+
+	.blog #main, .archive #main {
+		padding-top: .5em;
+	}
+}
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+@import "primary/asides";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";

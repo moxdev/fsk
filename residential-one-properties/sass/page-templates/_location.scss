@@ -1,0 +1,23 @@
+.page-template-page-location {
+	#map-canvas {
+		height: 225px;
+	}
+
+	@include respond-to-vert(small) {
+		#map-canvas {
+			height: 350px;
+		}
+	}
+
+	@include respond-to(medium) {
+		#content > .wrapper {
+			text-align: center;
+		}
+	}
+
+	@include respond-to(large) {
+		#map-canvas {
+			height: 425px;
+		}
+	}
+}

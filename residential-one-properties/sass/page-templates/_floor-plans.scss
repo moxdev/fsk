@@ -1,0 +1,148 @@
+.page-template-page-floor-plans {
+	#article-wrapper {
+		background-color: $color__background-alt;
+		max-width: none;
+	}
+
+	#floor-plan-listing {
+		padding-bottom: 20px;
+		padding-top: 20px;
+
+		#plan-nav {
+			margin: 0 0 3em;
+			padding: 0;
+			list-style: none;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display:flex;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-ms-flex-pack: center;
+			justify-content:center;
+
+			li {
+				margin-right: 1em;
+			}
+
+			a {
+				color: $color__text-alt;
+				text-decoration: none;
+				font-family: ralewaymedium;
+
+				&:hover, &.active {
+					text-decoration: underline;
+				}
+
+				&.active {
+					color: $color__brand-1;
+				}
+			}
+		}
+
+		.floor-plan {
+			text-align: center;
+			display: none;
+			transition:opacity .25s;
+			opacity: 0;
+
+			&.active {
+				opacity:1;
+			}
+
+			span {
+				display: block;
+			}
+
+			h3 {
+				color: $color__brand-1;
+			}
+
+			.plan-img {
+				margin-top: 1.5em;
+				display: block;
+				width: 100%;
+			}
+		}
+
+		@include respond-to(medium) {
+			padding-left:20px;
+			padding-right:20px;
+		}
+	}
+
+	@include respond-to(medium) {
+		.flex {
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display:flex;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			-webkit-flex-wrap: nowrap;
+			-ms-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+
+			.flex-item {
+				-ms-flex: 1 1 50%;
+				flex: 1 1 50%;
+			}
+
+			#floor-plan-listing, #article-wrapper {
+				padding:0;
+			}
+
+			#floor-plan-listing {
+				-ms-flex-order:1;
+				order:1;
+
+				& > div {
+					padding:30px;
+					float: right;
+					max-width: 530px;
+				}
+			}
+
+			#article-wrapper {
+				-ms-flex-order:5;
+				order:5;
+
+				article {
+					padding-left: 30px;
+					padding-right: 30px;
+					float: left;
+					max-width: 530px;
+				}
+			}
+		}
+	}
+
+	@include respond-to(large) {
+		.flex {
+			#floor-plan-listing {
+
+				& > div {
+					padding:30px 60px;
+					max-width: 710px;
+				}
+				#plan-nav {
+					font-size: .83em;
+					margin: 0;
+					justify-content: none;
+				}
+			}
+
+			#article-wrapper {
+
+				article {
+					padding-left: 60px;
+					padding-right: 60px;
+					max-width: 710px;
+				}
+			}
+		}
+	}
+}

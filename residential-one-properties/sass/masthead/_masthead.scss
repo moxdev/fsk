@@ -1,0 +1,103 @@
+#masthead {
+	background-color: #fff;
+	padding-top: 10px;
+	color: $color__brand-4;
+
+	&:after {
+		content: '';
+		display: block;
+		height: 1px;
+		background-color: $color__brand-2;
+	}
+
+	.wrapper {
+		padding-bottom: 20px;
+	}
+
+	.site-branding {
+		width: 55%;
+		max-width: 225px;
+
+		.custom-logo {
+			display: block;
+		}
+
+		.custom-logo-link {
+			display: block;
+			padding-bottom: 30px;
+		}
+	}
+
+	.masthead-tel {
+		float: right;
+		font-family:$font__main-bold;
+		font-size: .875em;
+		color: $color__brand-1;
+		padding-bottom: 10px;
+		padding-top: 3.6em;
+
+		span {
+			font-family: $font__main-alt-2;
+			display: none;
+		}
+	}
+
+	.flex {
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display:flex;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-ms-flex-pack: justify;
+		align-content: space-around;
+		-ms-flex-align: baseline;
+		align-items:baseline;
+
+		.flex-item {
+			-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
+		}
+	}
+
+	@include respond-to(x-small) {
+		.masthead-tel {
+			font-size: 1em;
+		}
+	}
+
+	@include respond-to(small) {
+		.site-branding {
+			max-width: 275px;
+		}
+
+		.masthead-tel {
+			span {
+				display: inline;
+			}
+		}
+	}
+
+	@include respond-to(large) {
+		padding-top: 25px;
+
+		.site-branding {
+			padding-bottom: 5px;
+			max-width: 300px;
+
+			.custom-logo-link {
+				padding-bottom: 0;
+			}
+		}
+		.flex-item {
+			position: relative;
+
+			.masthead-tel {
+				padding-top: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+.widget#contact-hours, .widget#contact-location, .widget#contact-phone {
+	.tel, .widget-contact-hours, .widget-address {
+		display:table;
+	}
+
+	.tel {
+		color: inherit;
+	}
+
+	.widget-contact-phone, .widget-contact-fax {
+		text-transform: lowercase;
+	}
+
+	.widget-contact-phone:before {
+		content: 'Phone: ';
+	}
+
+	.widget-contact-fax:before {
+		content: 'Fax: ';
+	}
+}

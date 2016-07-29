@@ -1,0 +1,12 @@
+.mihu-footer {
+    float: none;
+    margin: 0 auto;
+    width: 100px;
+    display: block;
+
+    @include respond-to(x-small) {
+        float: right;
+        margin: 0 20px;
+        width: auto;
+    }
+}

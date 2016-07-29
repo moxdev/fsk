@@ -114,7 +114,7 @@ function residential_one_properties_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => __( 'Blog Sidebar', 'residential-one-properties' ),
 		'id'            => 'sidebar-blog',
@@ -129,14 +129,14 @@ add_action( 'widgets_init', 'residential_one_properties_widgets_init' );
 /**
  * Load jQuery in the footer.
  */
-function register_jquery()  {  
-	if (!is_admin()) {  
-		wp_deregister_script('jquery');  
-        // Load the copy of jQuery that comes with WordPress  
-        // The last parameter set to TRUE states that it should be loaded in the footer.  
-        wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', FALSE, FALSE, TRUE);  
-    }  
-}  
+function register_jquery()  {
+	if (!is_admin()) {
+		wp_deregister_script('jquery');
+        // Load the copy of jQuery that comes with WordPress
+        // The last parameter set to TRUE states that it should be loaded in the footer.
+        wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', FALSE, FALSE, TRUE);
+    }
+}
 add_action('init', 'register_jquery');
 
 /**
@@ -264,7 +264,7 @@ include_once( get_stylesheet_directory() . '/plugins/mm4-you-contact-form/mm4-yo
  * SEO Page Headers
  */
 function residential_one_properties_page_header() {
-	if( function_exists( 'get_field' ) ) { 
+	if( function_exists( 'get_field' ) ) {
 		$on_page_title = get_field('on_page_title');
 			if($on_page_title) { ?>
 			<header class="entry-header">
@@ -282,7 +282,7 @@ function residential_one_properties_page_header() {
  * Sidebar Content
  */
 function residential_one_properties_sidebar_content() {
-	if( function_exists( 'get_field' ) ) { 
+	if( function_exists( 'get_field' ) ) {
 		$sidebar_content = get_field('custom_sidebar_content');
 			if($sidebar_content) { ?>
 				<aside class="custom_sidebar_content">
@@ -291,3 +291,13 @@ function residential_one_properties_sidebar_content() {
 		<?php }
 	}
 }
+
+
+/*
+* Remove space in header for admin bar - admin bar interferes with absolute positioning in the masthead
+ */
+// add_action('get_header', 'residential_one_properties_filter_head');
+
+// function residential_one_properties_filter_head() {
+// 	remove_action('wp_head', '_admin_bar_bump_cb');
+// }

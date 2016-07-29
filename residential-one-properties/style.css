@@ -471,29 +471,30 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 7, sass/typography/_headings.scss */
 h1 {
-  font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
+  font-family: ralewaysemibold;
+  color: #c6883f;
   font-size: 2.25em;
   line-height: 1.125;
 }
 
-/* line 13, sass/typography/_headings.scss */
+/* line 14, sass/typography/_headings.scss */
 h2 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: .5em;
 }
 
-/* line 19, sass/typography/_headings.scss */
+/* line 20, sass/typography/_headings.scss */
 h3 {
+  font-family: ralewaysemibold;
+  color: #754100;
   font-size: 1.3125em;
   line-height: 1;
 }
 
-/* line 24, sass/typography/_headings.scss */
+/* line 27, sass/typography/_headings.scss */
 .widget#contact-hours h3, .widget#contact-location h3, .widget#contact-phone h3 {
   text-transform: uppercase;
-  font-family: "ralewaybold", Arial, Helvetica, sans-serif;
-  color: #c6883f;
 }
 
 /* line 1, sass/typography/_copy.scss */
@@ -587,7 +588,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 /* line 24, sass/elements/_elements.scss */
 hr {
-  background-color: #754100;
+  background-color: #c6883f;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -640,23 +641,6 @@ table td, table th {
   padding: .25em;
   line-height: 1.1875;
   text-align: left;
-}
-
-/* line 40, sass/elements/_elements.scss */
-h1 {
-  color: #c6883f;
-  font-family: ralewaysemibold;
-}
-
-/* line 45, sass/elements/_elements.scss */
-h3 {
-  color: #c6883f;
-  font-family: ralewaymedium;
-}
-
-/* line 50, sass/elements/_elements.scss */
-p {
-  font-family: ralewaylight;
 }
 
 /*--------------------------------------------------------------
@@ -2325,7 +2309,7 @@ textarea {
 --------------------------------------------------------------*/
 /* line 1, sass/navigation/_links.scss */
 a {
-  color: white;
+  color: #c6883f;
 }
 /* line 4, sass/navigation/_links.scss */
 a:visited {
@@ -2367,7 +2351,7 @@ a:hover, a:active {
 /* line 2, sass/navigation/_menus.scss */
 .mobile-navigation {
   background-color: #754100;
-  position: relative;
+  position: fixed;
   z-index: 150;
   display: none;
   visibility: hidden;
@@ -2418,7 +2402,7 @@ a:hover, a:active {
   top: 3px;
   font-size: 1.75em;
   margin-right: .25em;
-  color: white;
+  color: #c6883f;
 }
 /* line 59, sass/navigation/_menus.scss */
 .mobile-navigation li.current_page_item:before {
@@ -2458,14 +2442,13 @@ a:hover, a:active {
 
 /* line 95, sass/navigation/_menus.scss */
 .menu-toggle {
-  position: absolute;
-  top: 20px;
-  right: 30px;
+  position: relative;
   z-index: 500;
   float: right;
   clear: right;
   background: #c6883f;
-  padding: .25em .5em;
+  padding: .5em .5em;
+  margin-top: 20px;
   font-size: 20px;
   font-size: 1.25rem;
 }
@@ -2477,14 +2460,14 @@ a:hover, a:active {
 }
 
 /* Desktop Home Nav */
-/* line 112, sass/navigation/_menus.scss */
+/* line 111, sass/navigation/_menus.scss */
 .site-navigation-frontpage {
   float: right;
   clear: right;
   display: none;
   margin-top: 5px;
 }
-/* line 118, sass/navigation/_menus.scss */
+/* line 117, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul {
   margin: 0;
   padding: 0;
@@ -2497,7 +2480,7 @@ a:hover, a:active {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
 }
-/* line 127, sass/navigation/_menus.scss */
+/* line 126, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -2507,21 +2490,21 @@ a:hover, a:active {
   z-index: 99999;
   display: block;
 }
-/* line 136, sass/navigation/_menus.scss */
+/* line 135, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 141, sass/navigation/_menus.scss */
+/* line 140, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul li {
   padding: 0;
   margin: 0;
 }
-/* line 144, sass/navigation/_menus.scss */
+/* line 143, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul li:hover > ul, .site-navigation-frontpage ul ul li.focus > ul {
   left: 100%;
 }
-/* line 150, sass/navigation/_menus.scss */
+/* line 149, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul a {
   width: 200px;
   font-family: "ralewaylight", Arial, Helvetica, sans-serif;
@@ -2530,50 +2513,49 @@ a:hover, a:active {
   background-color: #FFF;
   text-transform: none;
   padding: .5em;
-  color: #c6883f;
+  color: #754100;
 }
-/* line 160, sass/navigation/_menus.scss */
+/* line 159, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul a:before {
   content: "" !important;
 }
-/* line 164, sass/navigation/_menus.scss */
+/* line 163, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul a:hover {
   background-color: #e5e5e5;
   color: #000;
 }
-/* line 171, sass/navigation/_menus.scss */
+/* line 170, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul li:hover > ul,
 .site-navigation-frontpage ul li.focus > ul {
   left: auto;
 }
-/* line 177, sass/navigation/_menus.scss */
+/* line 176, sass/navigation/_menus.scss */
 .site-navigation-frontpage li {
   position: relative;
 }
-/* line 181, sass/navigation/_menus.scss */
+/* line 180, sass/navigation/_menus.scss */
 .site-navigation-frontpage > ul li {
   margin-left: 1em;
 }
-/* line 185, sass/navigation/_menus.scss */
+/* line 184, sass/navigation/_menus.scss */
 .site-navigation-frontpage a {
   text-decoration: none;
   display: block;
-  color: #6d6e70;
-  font-family: ralewayregular;
+  color: #FFF;
 }
-/* line 191, sass/navigation/_menus.scss */
+/* line 189, sass/navigation/_menus.scss */
 .site-navigation-frontpage a:hover {
-  color: #c6883f;
+  color: #754100;
 }
 @media (min-width: 1280px) {
-  /* line 112, sass/navigation/_menus.scss */
+  /* line 111, sass/navigation/_menus.scss */
   .site-navigation-frontpage {
     display: block;
   }
 }
 
 /* Desktop Drill Nav */
-/* line 202, sass/navigation/_menus.scss */
+/* line 200, sass/navigation/_menus.scss */
 .site-navigation {
   background-color: #754100;
   padding: 0 35px;
@@ -2582,7 +2564,7 @@ a:hover, a:active {
   display: none;
   position: relative;
 }
-/* line 210, sass/navigation/_menus.scss */
+/* line 208, sass/navigation/_menus.scss */
 .site-navigation:before {
   content: '';
   display: block;
@@ -2593,7 +2575,7 @@ a:hover, a:active {
   margin-top: -12px;
   background-color: #754100;
 }
-/* line 221, sass/navigation/_menus.scss */
+/* line 219, sass/navigation/_menus.scss */
 .site-navigation ul {
   margin: 0 auto;
   padding: 0;
@@ -2608,7 +2590,7 @@ a:hover, a:active {
   -webkit-justify-content: center;
           justify-content: center;
 }
-/* line 232, sass/navigation/_menus.scss */
+/* line 230, sass/navigation/_menus.scss */
 .site-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -2618,20 +2600,20 @@ a:hover, a:active {
   z-index: 99999;
   display: block;
 }
-/* line 241, sass/navigation/_menus.scss */
+/* line 239, sass/navigation/_menus.scss */
 .site-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 246, sass/navigation/_menus.scss */
+/* line 244, sass/navigation/_menus.scss */
 .site-navigation ul ul li {
   padding: 0;
 }
-/* line 248, sass/navigation/_menus.scss */
+/* line 246, sass/navigation/_menus.scss */
 .site-navigation ul ul li:hover > ul, .site-navigation ul ul li.focus > ul {
   left: 100%;
 }
-/* line 254, sass/navigation/_menus.scss */
+/* line 252, sass/navigation/_menus.scss */
 .site-navigation ul ul a {
   width: 200px;
   font-family: "ralewaylight", Arial, Helvetica, sans-serif;
@@ -2640,31 +2622,31 @@ a:hover, a:active {
   background-color: #FFF;
   text-transform: none;
   padding: .5em;
-  color: #c6883f;
+  color: #ffffff;
 }
-/* line 264, sass/navigation/_menus.scss */
+/* line 262, sass/navigation/_menus.scss */
 .site-navigation ul ul a:before {
   content: "" !important;
 }
-/* line 269, sass/navigation/_menus.scss */
+/* line 267, sass/navigation/_menus.scss */
 .site-navigation ul ul .current_page_item > a, .site-navigation ul ul a:hover {
-  background-color: #e5e5e5;
+  background-color: #754100;
 }
-/* line 282, sass/navigation/_menus.scss */
+/* line 280, sass/navigation/_menus.scss */
 .site-navigation ul li:hover > ul,
 .site-navigation ul li.focus > ul {
   left: auto;
 }
-/* line 288, sass/navigation/_menus.scss */
+/* line 286, sass/navigation/_menus.scss */
 .site-navigation li {
   position: relative;
   padding: 0 .5em;
 }
-/* line 292, sass/navigation/_menus.scss */
+/* line 290, sass/navigation/_menus.scss */
 .site-navigation li:before {
   display: none;
 }
-/* line 297, sass/navigation/_menus.scss */
+/* line 295, sass/navigation/_menus.scss */
 .site-navigation a {
   font-family: "ralewaybold", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -2674,9 +2656,9 @@ a:hover, a:active {
   position: relative;
   letter-spacing: .03125em;
   color: #FFF;
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-/* line 308, sass/navigation/_menus.scss */
+/* line 306, sass/navigation/_menus.scss */
 .site-navigation a:before {
   font-size: 1.75em;
   line-height: 1;
@@ -2684,66 +2666,61 @@ a:hover, a:active {
   left: 10px;
   top: 20%;
 }
-/* line 317, sass/navigation/_menus.scss */
+/* line 315, sass/navigation/_menus.scss */
 .site-navigation .current_page_item > a,
 .site-navigation .current-menu-item > a,
 .site-navigation a:hover {
   color: #c6883f;
 }
-/* line 323, sass/navigation/_menus.scss */
+/* line 321, sass/navigation/_menus.scss */
 .site-navigation .current_page_item > a:hover {
   cursor: text;
 }
 @media (min-width: 1280px) {
-  /* line 202, sass/navigation/_menus.scss */
+  /* line 200, sass/navigation/_menus.scss */
   .site-navigation {
     display: block;
   }
 }
 
 /* Desktop Alt Nav */
-/* line 333, sass/navigation/_menus.scss */
+/* line 331, sass/navigation/_menus.scss */
 .alt-navigation {
   float: right;
   margin: 0 0 0 1em;
   display: none;
 }
-/* line 338, sass/navigation/_menus.scss */
+/* line 336, sass/navigation/_menus.scss */
 .alt-navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 344, sass/navigation/_menus.scss */
+/* line 342, sass/navigation/_menus.scss */
 .alt-navigation li {
   float: left;
   margin-left: .25em;
 }
-/* line 349, sass/navigation/_menus.scss */
+/* line 347, sass/navigation/_menus.scss */
 .alt-navigation a {
   text-decoration: none;
   font-size: .8125em;
-  background-color: #000;
+  background-color: #754100;
   padding: .25em .6125em;
   color: #FFF;
 }
-/* line 357, sass/navigation/_menus.scss */
-.alt-navigation .current_page_item > a, .alt-navigation a:hover {
-  background-color: #6d6e70;
-  color: #FFF;
-}
-/* line 362, sass/navigation/_menus.scss */
+/* line 355, sass/navigation/_menus.scss */
 .alt-navigation .current_page_item > a:hover {
   cursor: text;
 }
 @media (min-width: 1280px) {
-  /* line 333, sass/navigation/_menus.scss */
+  /* line 331, sass/navigation/_menus.scss */
   .alt-navigation {
     display: block;
   }
 }
 
-/* line 371, sass/navigation/_menus.scss */
+/* line 364, sass/navigation/_menus.scss */
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
@@ -2751,21 +2728,21 @@ a:hover, a:active {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 378, sass/navigation/_menus.scss */
+/* line 371, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 383, sass/navigation/_menus.scss */
+/* line 376, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 388, sass/navigation/_menus.scss */
+/* line 381, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -3251,7 +3228,7 @@ object {
 /* line 57, sass/media/_lightbox.scss */
 #imagelightbox-caption {
   text-align: center;
-  color: #c6883f;
+  color: #754100;
   position: fixed;
   z-index: 10001;
   left: 0px;
@@ -3301,9 +3278,9 @@ object {
 --------------------------------------------------------------*/
 /* line 1, sass/masthead/_masthead.scss */
 #masthead {
-  background-color: #fff;
+  background-color: #FFF;
   padding-top: 10px;
-  color: #6d6e70;
+  color: #754100;
 }
 /* line 6, sass/masthead/_masthead.scss */
 #masthead:after {
@@ -3313,81 +3290,164 @@ object {
   background-color: #754100;
 }
 /* line 13, sass/masthead/_masthead.scss */
-#masthead .wrapper {
-  padding-bottom: 20px;
-}
-/* line 17, sass/masthead/_masthead.scss */
-#masthead .site-branding {
-  width: 55%;
-  max-width: 225px;
-}
-/* line 21, sass/masthead/_masthead.scss */
-#masthead .site-branding .custom-logo {
-  display: block;
-}
-/* line 25, sass/masthead/_masthead.scss */
-#masthead .site-branding .custom-logo-link {
-  display: block;
-  padding-bottom: 30px;
-}
-/* line 31, sass/masthead/_masthead.scss */
-#masthead .masthead-tel {
-  float: right;
-  font-family: "ralewaybold", Arial, Helvetica, sans-serif;
-  font-size: .875em;
-  color: #c6883f;
-  padding-bottom: 10px;
-  padding-top: 3.6em;
-}
-/* line 39, sass/masthead/_masthead.scss */
-#masthead .masthead-tel span {
-  font-family: "ralewaymedium", Arial, Helvetica, sans-serif;
-  display: none;
-}
-/* line 45, sass/masthead/_masthead.scss */
 #masthead .flex {
-  display: -ms-flexbox;
   display: -webkit-flex;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+      -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -ms-flex-pack: justify;
-  -webkit-align-content: space-around;
-      -ms-flex-line-pack: distribute;
-          align-content: space-around;
-  -ms-flex-align: baseline;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-          align-items: baseline;
+  -webkit-justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
-/* line 60, sass/masthead/_masthead.scss */
+/* line 20, sass/masthead/_masthead.scss */
 #masthead .flex .flex-item {
   -ms-flex: 1 1 auto;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
           flex: 1 1 auto;
+  position: relative;
+}
+/* line 27, sass/masthead/_masthead.scss */
+#masthead .wrapper {
+  padding-bottom: 10px;
+}
+/* line 31, sass/masthead/_masthead.scss */
+#masthead .site-branding {
+  width: 55%;
+  max-width: 225px;
+}
+/* line 35, sass/masthead/_masthead.scss */
+#masthead .site-branding .custom-logo {
+  display: block;
+}
+/* line 39, sass/masthead/_masthead.scss */
+#masthead .site-branding .custom-logo-link {
+  display: block;
+}
+/* line 44, sass/masthead/_masthead.scss */
+#masthead .download-link, #masthead .alt-download-link {
+  float: right;
+  display: none;
+}
+/* line 47, sass/masthead/_masthead.scss */
+#masthead .download-link #download-icon, #masthead .download-link #alt-download-icon, #masthead .alt-download-link #download-icon, #masthead .alt-download-link #alt-download-icon {
+  display: none;
+}
+/* line 52, sass/masthead/_masthead.scss */
+#masthead .masthead-tel, #masthead .alt-masthead-tel {
+  float: right;
+  font-family: ralewaymedium;
+  font-size: .875em;
+  color: #c6883f;
+}
+/* line 57, sass/masthead/_masthead.scss */
+#masthead .masthead-tel span, #masthead .alt-masthead-tel span {
+  display: none;
+}
+/* line 60, sass/masthead/_masthead.scss */
+#masthead .masthead-tel .mast-phone, #masthead .alt-masthead-tel .mast-phone {
+  font-family: ralewaybold;
 }
 @media (min-width: 575px) {
-  /* line 67, sass/masthead/_masthead.scss */
-  #masthead .masthead-tel {
+  /* line 66, sass/masthead/_masthead.scss */
+  #masthead #masthead .flex {
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+  }
+  /* line 69, sass/masthead/_masthead.scss */
+  #masthead .masthead-tel, #masthead .alt-masthead-tel {
     font-size: 1em;
   }
 }
 @media (min-width: 750px) {
-  /* line 73, sass/masthead/_masthead.scss */
+  /* line 75, sass/masthead/_masthead.scss */
+  #masthead .flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+    -webkit-align-content: space-around;
+        -ms-flex-line-pack: distribute;
+            align-content: space-around;
+    -ms-flex-align: baseline;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+            align-items: baseline;
+  }
+  /* line 89, sass/masthead/_masthead.scss */
+  #masthead .flex .flex-item {
+    -ms-flex: 1 1 auto;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+    position: relative;
+  }
+  /* line 96, sass/masthead/_masthead.scss */
   #masthead .site-branding {
     max-width: 275px;
   }
-  /* line 78, sass/masthead/_masthead.scss */
-  #masthead .masthead-tel span {
+  /* line 101, sass/masthead/_masthead.scss */
+  #masthead .masthead-tel span, #masthead .alt-masthead-tel span {
     display: inline;
+  }
+  /* line 105, sass/masthead/_masthead.scss */
+  #masthead .alt-masthead-tel {
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+  /* line 109, sass/masthead/_masthead.scss */
+  #masthead .download-link {
+    display: inline;
+    margin-left: 20px;
+    font-family: "ralewaybold", Arial, Helvetica, sans-serif;
+    font-size: .675em;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #231f20;
+  }
+  /* line 118, sass/masthead/_masthead.scss */
+  #masthead .download-link #download-icon {
+    display: inline;
+    width: 1.5em;
+    margin-left: 10px;
+  }
+  /* line 124, sass/masthead/_masthead.scss */
+  #masthead .alt-download-section {
+    position: absolute;
+    right: 0;
+    top: 2.2em;
+  }
+  /* line 130, sass/masthead/_masthead.scss */
+  #masthead .alt-download-link {
+    margin-right: 2em;
+    display: inline;
+    font-family: "ralewaybold", Arial, Helvetica, sans-serif;
+    font-size: .675em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #231f20;
+  }
+  /* line 138, sass/masthead/_masthead.scss */
+  #masthead .alt-download-link #alt-download-icon {
+    display: inline;
+    width: 1.5em;
   }
 }
 @media (min-width: 1280px) {
@@ -3395,22 +3455,14 @@ object {
   #masthead {
     padding-top: 25px;
   }
-  /* line 87, sass/masthead/_masthead.scss */
+  /* line 148, sass/masthead/_masthead.scss */
   #masthead .site-branding {
     padding-bottom: 5px;
     max-width: 300px;
   }
-  /* line 91, sass/masthead/_masthead.scss */
-  #masthead .site-branding .custom-logo-link {
-    padding-bottom: 0;
-  }
-  /* line 95, sass/masthead/_masthead.scss */
-  #masthead .flex-item {
-    position: relative;
-  }
-  /* line 98, sass/masthead/_masthead.scss */
-  #masthead .flex-item .masthead-tel {
-    padding-top: 0;
+  /* line 152, sass/masthead/_masthead.scss */
+  #masthead .alt-masthead-tel {
+    margin-top: 0;
   }
 }
 
@@ -3438,47 +3490,47 @@ object {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 21, sass/colophon/_colophon.scss */
+/* line 20, sass/colophon/_colophon.scss */
 #colophon a {
   color: inherit;
   text-decoration: none;
 }
-/* line 26, sass/colophon/_colophon.scss */
+/* line 25, sass/colophon/_colophon.scss */
 #colophon .contact-info {
   margin-bottom: 1.5em;
 }
-/* line 29, sass/colophon/_colophon.scss */
+/* line 28, sass/colophon/_colophon.scss */
 #colophon .contact-info .ftr-name {
   display: none;
 }
-/* line 33, sass/colophon/_colophon.scss */
+/* line 32, sass/colophon/_colophon.scss */
 #colophon .contact-info .ftr-address {
   display: table;
   width: 100%;
 }
-/* line 39, sass/colophon/_colophon.scss */
+/* line 38, sass/colophon/_colophon.scss */
 #colophon .contact-info .colophon-ph a:before {
   content: 'P: ';
 }
-/* line 45, sass/colophon/_colophon.scss */
+/* line 44, sass/colophon/_colophon.scss */
 #colophon .contact-info .colophon-fx a:before {
   content: 'F: ';
 }
-/* line 51, sass/colophon/_colophon.scss */
+/* line 50, sass/colophon/_colophon.scss */
 #colophon .contact-info .colophon-fx a:before {
   content: 'F: ';
 }
-/* line 57, sass/colophon/_colophon.scss */
+/* line 56, sass/colophon/_colophon.scss */
 #colophon #eho {
   margin: 0 auto .5em;
   width: 29px;
   height: 32px;
 }
-/* line 61, sass/colophon/_colophon.scss */
+/* line 60, sass/colophon/_colophon.scss */
 #colophon #eho .cls-1 {
   fill: #bbbdc0;
 }
-/* line 66, sass/colophon/_colophon.scss */
+/* line 65, sass/colophon/_colophon.scss */
 #colophon #res-one-link {
   text-transform: lowercase;
   text-align: left;
@@ -3487,7 +3539,7 @@ object {
   font-size: .8125em;
   display: block;
 }
-/* line 74, sass/colophon/_colophon.scss */
+/* line 73, sass/colophon/_colophon.scss */
 #colophon #res-one-link svg {
   width: 130px;
   height: 21px;
@@ -3495,7 +3547,7 @@ object {
   margin: 3px auto 0;
   fill: #bbbdc0;
 }
-/* line 83, sass/colophon/_colophon.scss */
+/* line 82, sass/colophon/_colophon.scss */
 #colophon #slug {
   font-size: .75em;
 }
@@ -3504,58 +3556,54 @@ object {
   #colophon {
     text-align: left;
   }
-  /* line 90, sass/colophon/_colophon.scss */
+  /* line 89, sass/colophon/_colophon.scss */
   #colophon #eho, #colophon .contact-info {
     float: left;
   }
-  /* line 94, sass/colophon/_colophon.scss */
+  /* line 93, sass/colophon/_colophon.scss */
   #colophon #eho {
     margin-right: 1em;
   }
-  /* line 98, sass/colophon/_colophon.scss */
+  /* line 97, sass/colophon/_colophon.scss */
   #colophon #res-one-link {
     float: right;
     width: 140px;
   }
-  /* line 102, sass/colophon/_colophon.scss */
+  /* line 101, sass/colophon/_colophon.scss */
   #colophon #res-one-link svg {
     float: left;
   }
-  /* line 107, sass/colophon/_colophon.scss */
+  /* line 106, sass/colophon/_colophon.scss */
   #colophon #slug {
     float: right;
     clear: right;
     margin-top: 2em;
   }
-  /* line 113, sass/colophon/_colophon.scss */
-  #colophon svg {
-    fill: #6d6e70;
-  }
 }
 @media (min-width: 750px) {
-  /* line 120, sass/colophon/_colophon.scss */
+  /* line 115, sass/colophon/_colophon.scss */
   #colophon .contact-info .ftr-name {
     display: block;
   }
-  /* line 124, sass/colophon/_colophon.scss */
+  /* line 119, sass/colophon/_colophon.scss */
   #colophon .contact-info .ftr-address, #colophon .contact-info .colophon-ph, #colophon .contact-info .colophon-fx {
     display: inline;
   }
-  /* line 128, sass/colophon/_colophon.scss */
+  /* line 123, sass/colophon/_colophon.scss */
   #colophon .contact-info .ftr-address {
     margin-right: .5em;
   }
-  /* line 132, sass/colophon/_colophon.scss */
+  /* line 127, sass/colophon/_colophon.scss */
   #colophon .contact-info .colophon-ph {
     margin-right: 1em;
   }
 }
 @media (min-width: 950px) {
-  /* line 139, sass/colophon/_colophon.scss */
+  /* line 134, sass/colophon/_colophon.scss */
   #colophon #res-one-link {
     width: 175px;
   }
-  /* line 142, sass/colophon/_colophon.scss */
+  /* line 137, sass/colophon/_colophon.scss */
   #colophon #res-one-link svg {
     width: 165px;
     height: 27px;
@@ -3572,6 +3620,403 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Page Content
+--------------------------------------------------------------*/
+/* line 1, sass/page-templates/_content.scss */
+p {
+  font-family: ralewaylight;
+}
+
+/*--------------------------------------------------------------
+## Home Page
+--------------------------------------------------------------*/
+/* line 2, sass/page-templates/_frontpage.scss */
+.page-template-frontpage #masthead {
+  background-color: #ffffff;
+}
+/* line 4, sass/page-templates/_frontpage.scss */
+.page-template-frontpage #masthead:after {
+  height: 0;
+}
+/* line 7, sass/page-templates/_frontpage.scss */
+.page-template-frontpage #masthead .menu-item a {
+  color: #6d6e71;
+  font-family: ralewayregular;
+}
+/* line 11, sass/page-templates/_frontpage.scss */
+.page-template-frontpage #masthead .masthead-tel {
+  color: #c6883f;
+}
+/* line 16, sass/page-templates/_frontpage.scss */
+.page-template-frontpage h1 {
+  font-size: 1.75em;
+}
+/* line 20, sass/page-templates/_frontpage.scss */
+.page-template-frontpage .home-page-highlights {
+  display: table;
+  width: 100%;
+}
+/* line 24, sass/page-templates/_frontpage.scss */
+.page-template-frontpage .home-page-highlights .highlight {
+  color: #FFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  font-family: "ralewaybold", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  background-size: cover;
+  background-position: center center;
+  display: table-row;
+  width: 100%;
+  -webkit-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+/* line 36, sass/page-templates/_frontpage.scss */
+.page-template-frontpage .home-page-highlights .highlight > div {
+  padding: 20px;
+  height: 200px;
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: center;
+}
+/* line 43, sass/page-templates/_frontpage.scss */
+.page-template-frontpage .home-page-highlights .highlight > div .highlight-text {
+  display: block;
+  margin: 0 auto;
+  font-size: 2em;
+}
+/* line 48, sass/page-templates/_frontpage.scss */
+.page-template-frontpage .home-page-highlights .highlight > div .highlight-text:before {
+  font-family: 'icomoon';
+  display: block;
+  margin: 0 auto;
+  font-size: 2em;
+  line-height: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+/* line 59, sass/page-templates/_frontpage.scss */
+.page-template-frontpage .home-page-highlights .highlight:hover {
+  opacity: .5;
+}
+@media (min-height: 750px) {
+  /* line 69, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight > div {
+    height: 250px;
+  }
+}
+@media (min-width: 750px) {
+  /* line 77, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights {
+    height: 50vh;
+    position: relative;
+  }
+  /* line 81, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight {
+    position: absolute;
+    width: 50%;
+  }
+  /* line 85, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight > div {
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  /* line 94, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    top: 0;
+    border-right: 1px solid #FFF;
+  }
+  /* line 101, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(2) {
+    right: 0;
+    bottom: 50%;
+    top: 0;
+    border-left: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+  }
+  /* line 109, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    top: 50%;
+    border-left: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+  }
+}
+@media (min-width: 950px) {
+  /* line 120, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage #content > .wrapper {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  /* line 128, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights {
+    height: 57vh;
+  }
+  /* line 131, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight {
+    width: auto;
+  }
+  /* line 135, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 40%;
+  }
+  /* line 141, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) > div {
+    text-align: left;
+  }
+  /* line 144, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) > div .highlight-text {
+    font-size: 3.75em;
+  }
+  /* line 147, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) > div .highlight-text:before {
+    display: inline;
+    font-size: 1em;
+  }
+  /* line 155, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(2) {
+    right: 0;
+    bottom: 50%;
+    top: 0;
+    left: 60%;
+  }
+  /* line 162, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    top: 50%;
+    left: 60%;
+  }
+}
+@media (min-width: 1280px) {
+  /* line 172, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage #content > .wrapper {
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /* line 181, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) {
+    right: 35%;
+  }
+  /* line 184, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) > div {
+    text-align: left;
+  }
+  /* line 187, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) > div .highlight-text {
+    font-size: 4.75em;
+  }
+  /* line 193, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(2) {
+    left: 65%;
+  }
+  /* line 197, sass/page-templates/_frontpage.scss */
+  .page-template-frontpage .home-page-highlights .highlight:nth-child(3) {
+    left: 65%;
+  }
+}
+
+/*--------------------------------------------------------------
+## Floor Plans
+--------------------------------------------------------------*/
+/* line 2, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #article-wrapper {
+  background-color: #e5e5e5;
+  max-width: none;
+}
+/* line 7, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #floor-plan-listing {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: ralewaymedium;
+}
+/* line 12, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #floor-plan-listing #plan-nav {
+  margin: 0 0 3em;
+  padding: 0;
+  list-style: none;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+/* line 28, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #floor-plan-listing #plan-nav li {
+  margin-right: 1em;
+}
+/* line 32, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #floor-plan-listing #plan-nav a {
+  color: #6d6e70;
+  text-decoration: none;
+}
+/* line 36, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #floor-plan-listing #plan-nav a:hover, .page-template-page-floor-plans #floor-plan-listing #plan-nav a.active {
+  text-decoration: underline;
+}
+/* line 40, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #floor-plan-listing #plan-nav a.active {
+  color: #754100;
+}
+/* line 46, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #floor-plan-listing .floor-plan {
+  text-align: center;
+  display: none;
+  -webkit-transition: opacity .25s;
+  transition: opacity .25s;
+  opacity: 0;
+  color: #6d6e70;
+  font-family: ralewaylight;
+}
+/* line 54, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #floor-plan-listing .floor-plan.active {
+  opacity: 1;
+}
+/* line 58, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #floor-plan-listing .floor-plan span {
+  display: block;
+}
+/* line 62, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #floor-plan-listing .floor-plan h3 {
+  font-family: ralewaymedium;
+  color: #754100;
+}
+/* line 66, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #floor-plan-listing .floor-plan .sq-ft {
+  color: #6d6e70;
+}
+/* line 71, sass/page-templates/_floor-plans.scss */
+.page-template-page-floor-plans #floor-plan-listing .floor-plan .plan-img {
+  margin-top: 1.5em;
+  display: block;
+  width: 100%;
+}
+@media (min-width: 950px) {
+  /* line 7, sass/page-templates/_floor-plans.scss */
+  .page-template-page-floor-plans #floor-plan-listing {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 950px) {
+  /* line 85, sass/page-templates/_floor-plans.scss */
+  .page-template-page-floor-plans .flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  /* line 96, sass/page-templates/_floor-plans.scss */
+  .page-template-page-floor-plans .flex .flex-item {
+    -ms-flex: 1 1 50%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+  /* line 101, sass/page-templates/_floor-plans.scss */
+  .page-template-page-floor-plans .flex #floor-plan-listing, .page-template-page-floor-plans .flex #article-wrapper {
+    padding: 0;
+  }
+  /* line 105, sass/page-templates/_floor-plans.scss */
+  .page-template-page-floor-plans .flex #floor-plan-listing {
+    -ms-flex-order: 1;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+            order: 1;
+  }
+  /* line 109, sass/page-templates/_floor-plans.scss */
+  .page-template-page-floor-plans .flex #floor-plan-listing > div {
+    padding: 30px;
+    float: right;
+    max-width: 530px;
+  }
+  /* line 116, sass/page-templates/_floor-plans.scss */
+  .page-template-page-floor-plans .flex #article-wrapper {
+    -ms-flex-order: 5;
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+            order: 5;
+  }
+  /* line 120, sass/page-templates/_floor-plans.scss */
+  .page-template-page-floor-plans .flex #article-wrapper article {
+    padding-left: 30px;
+    padding-right: 30px;
+    float: left;
+    max-width: 530px;
+  }
+}
+@media (min-width: 1280px) {
+  /* line 134, sass/page-templates/_floor-plans.scss */
+  .page-template-page-floor-plans .flex #floor-plan-listing > div {
+    padding: 30px 60px;
+    max-width: 710px;
+  }
+  /* line 142, sass/page-templates/_floor-plans.scss */
+  .page-template-page-floor-plans .flex #article-wrapper article {
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 710px;
+  }
+}
+
+/*--------------------------------------------------------------
+## Location
+--------------------------------------------------------------*/
+/* line 2, sass/page-templates/_location.scss */
+.page-template-page-location #map-canvas {
+  height: 225px;
+}
+@media (min-height: 750px) {
+  /* line 7, sass/page-templates/_location.scss */
+  .page-template-page-location #map-canvas {
+    height: 350px;
+  }
+}
+@media (min-width: 950px) {
+  /* line 13, sass/page-templates/_location.scss */
+  .page-template-page-location #content > .wrapper {
+    text-align: center;
+  }
+}
+@media (min-width: 1280px) {
+  /* line 19, sass/page-templates/_location.scss */
+  .page-template-page-location #map-canvas {
+    height: 425px;
+  }
+}
+
 /*--------------------------------------------------------------
 ## Photo Gallery
 --------------------------------------------------------------*/
@@ -3668,385 +4113,38 @@ object {
 --------------------------------------------------------------*/
 /* line 1, sass/page-templates/_contact.scss */
 .page-template-page-contact {
-  color: #6d6e70;
+  color: #000000;
 }
 /* line 4, sass/page-templates/_contact.scss */
+.page-template-page-contact #alt-menu .current_page_item > a {
+  background-color: #c6883f;
+  color: #ffffff;
+}
+/* line 8, sass/page-templates/_contact.scss */
+.page-template-page-contact #alt-menu .current_page_item > a:hover {
+  background-color: #754100;
+}
+/* line 13, sass/page-templates/_contact.scss */
 .page-template-page-contact #content {
   background-color: #e5e5e5;
 }
 
 /*--------------------------------------------------------------
-## Location
+## footer
 --------------------------------------------------------------*/
-/* line 2, sass/page-templates/_location.scss */
-.page-template-page-location #map-canvas {
-  height: 225px;
-}
-@media (min-height: 750px) {
-  /* line 7, sass/page-templates/_location.scss */
-  .page-template-page-location #map-canvas {
-    height: 350px;
-  }
-}
-@media (min-width: 950px) {
-  /* line 13, sass/page-templates/_location.scss */
-  .page-template-page-location #content > .wrapper {
-    text-align: center;
-  }
-}
-@media (min-width: 1280px) {
-  /* line 19, sass/page-templates/_location.scss */
-  .page-template-page-location #map-canvas {
-    height: 425px;
-  }
-}
-
-/*--------------------------------------------------------------
-## Floor Plans
---------------------------------------------------------------*/
-/* line 2, sass/page-templates/_floor-plans.scss */
-.page-template-page-floor-plans #article-wrapper {
-  background-color: #e5e5e5;
-  max-width: none;
-}
-/* line 7, sass/page-templates/_floor-plans.scss */
-.page-template-page-floor-plans #floor-plan-listing {
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-/* line 11, sass/page-templates/_floor-plans.scss */
-.page-template-page-floor-plans #floor-plan-listing #plan-nav {
-  margin: 0 0 3em;
-  padding: 0;
-  list-style: none;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -webkit-box;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-}
-/* line 27, sass/page-templates/_floor-plans.scss */
-.page-template-page-floor-plans #floor-plan-listing #plan-nav li {
-  margin-right: 1em;
-}
-/* line 31, sass/page-templates/_floor-plans.scss */
-.page-template-page-floor-plans #floor-plan-listing #plan-nav a {
-  color: #6d6e70;
-  text-decoration: none;
-  font-family: ralewaymedium;
-}
-/* line 36, sass/page-templates/_floor-plans.scss */
-.page-template-page-floor-plans #floor-plan-listing #plan-nav a:hover, .page-template-page-floor-plans #floor-plan-listing #plan-nav a.active {
-  text-decoration: underline;
-}
-/* line 40, sass/page-templates/_floor-plans.scss */
-.page-template-page-floor-plans #floor-plan-listing #plan-nav a.active {
-  color: #c6883f;
-}
-/* line 46, sass/page-templates/_floor-plans.scss */
-.page-template-page-floor-plans #floor-plan-listing .floor-plan {
-  text-align: center;
-  display: none;
-  -webkit-transition: opacity .25s;
-  transition: opacity .25s;
-  opacity: 0;
-}
-/* line 52, sass/page-templates/_floor-plans.scss */
-.page-template-page-floor-plans #floor-plan-listing .floor-plan.active {
-  opacity: 1;
-  color: #6d6e70;
-}
-/* line 57, sass/page-templates/_floor-plans.scss */
-.page-template-page-floor-plans #floor-plan-listing .floor-plan h3 {
-  color: #c6883f;
-}
-/* line 61, sass/page-templates/_floor-plans.scss */
-.page-template-page-floor-plans #floor-plan-listing .floor-plan .plan-img {
-  margin-top: 1.5em;
+/* line 1, sass/page-templates/_footer.scss */
+.mihu-footer {
+  float: none;
+  margin: 0 auto;
+  width: 100px;
   display: block;
-  width: 100%;
 }
-@media (min-width: 950px) {
-  /* line 7, sass/page-templates/_floor-plans.scss */
-  .page-template-page-floor-plans #floor-plan-listing {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (min-width: 950px) {
-  /* line 75, sass/page-templates/_floor-plans.scss */
-  .page-template-page-floor-plans .flex {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: -webkit-box;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-  /* line 86, sass/page-templates/_floor-plans.scss */
-  .page-template-page-floor-plans .flex .flex-item {
-    -ms-flex: 1 1 50%;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 50%;
-            flex: 1 1 50%;
-  }
-  /* line 91, sass/page-templates/_floor-plans.scss */
-  .page-template-page-floor-plans .flex #floor-plan-listing, .page-template-page-floor-plans .flex #article-wrapper {
-    padding: 0;
-  }
-  /* line 95, sass/page-templates/_floor-plans.scss */
-  .page-template-page-floor-plans .flex #floor-plan-listing {
-    -ms-flex-order: 1;
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-            order: 1;
-  }
-  /* line 99, sass/page-templates/_floor-plans.scss */
-  .page-template-page-floor-plans .flex #floor-plan-listing > div {
-    padding: 30px;
+@media (min-width: 575px) {
+  /* line 1, sass/page-templates/_footer.scss */
+  .mihu-footer {
     float: right;
-    max-width: 530px;
-  }
-  /* line 106, sass/page-templates/_floor-plans.scss */
-  .page-template-page-floor-plans .flex #article-wrapper {
-    -ms-flex-order: 5;
-    -webkit-box-ordinal-group: 6;
-    -webkit-order: 5;
-            order: 5;
-  }
-  /* line 110, sass/page-templates/_floor-plans.scss */
-  .page-template-page-floor-plans .flex #article-wrapper article {
-    padding-left: 30px;
-    padding-right: 30px;
-    float: left;
-    max-width: 530px;
-  }
-}
-@media (min-width: 1280px) {
-  /* line 124, sass/page-templates/_floor-plans.scss */
-  .page-template-page-floor-plans .flex #floor-plan-listing > div {
-    padding: 30px 60px;
-    max-width: 710px;
-  }
-  /* line 128, sass/page-templates/_floor-plans.scss */
-  .page-template-page-floor-plans .flex #floor-plan-listing #plan-nav {
-    font-size: .83em;
-    margin: 0;
-    -webkit-box-pack: none;
-    -webkit-justify-content: none;
-        -ms-flex-pack: none;
-            justify-content: none;
-  }
-  /* line 137, sass/page-templates/_floor-plans.scss */
-  .page-template-page-floor-plans .flex #article-wrapper article {
-    padding-left: 60px;
-    padding-right: 60px;
-    max-width: 710px;
-  }
-}
-
-/*--------------------------------------------------------------
-## Home Page
---------------------------------------------------------------*/
-/* line 3, sass/page-templates/_frontpage.scss */
-.page-template-frontpage #masthead:after {
-  height: 0;
-}
-/* line 8, sass/page-templates/_frontpage.scss */
-.page-template-frontpage h1 {
-  font-size: 1.75em;
-}
-/* line 12, sass/page-templates/_frontpage.scss */
-.page-template-frontpage .home-page-highlights {
-  display: table;
-  width: 100%;
-}
-/* line 16, sass/page-templates/_frontpage.scss */
-.page-template-frontpage .home-page-highlights .highlight {
-  color: #FFF;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  text-decoration: none;
-  font-family: "ralewaybold", Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  background-size: cover;
-  background-position: center center;
-  display: table-row;
-  width: 100%;
-  -webkit-transition: opacity .25s ease-in-out;
-  transition: opacity .25s ease-in-out;
-}
-/* line 28, sass/page-templates/_frontpage.scss */
-.page-template-frontpage .home-page-highlights .highlight > div {
-  padding: 20px;
-  height: 200px;
-  display: table-cell;
-  vertical-align: bottom;
-  text-align: center;
-}
-/* line 35, sass/page-templates/_frontpage.scss */
-.page-template-frontpage .home-page-highlights .highlight > div .highlight-text {
-  display: block;
-  margin: 0 auto;
-  font-size: 2em;
-}
-/* line 40, sass/page-templates/_frontpage.scss */
-.page-template-frontpage .home-page-highlights .highlight > div .highlight-text:before {
-  font-family: 'icomoon';
-  display: block;
-  margin: 0 auto;
-  font-size: 2em;
-  line-height: 1;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-/* line 51, sass/page-templates/_frontpage.scss */
-.page-template-frontpage .home-page-highlights .highlight:hover {
-  opacity: .5;
-}
-@media (min-height: 750px) {
-  /* line 61, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight > div {
-    height: 250px;
-  }
-}
-@media (min-width: 750px) {
-  /* line 69, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights {
-    height: 50vh;
-    position: relative;
-  }
-  /* line 73, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight {
-    position: absolute;
-    width: 50%;
-  }
-  /* line 77, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight > div {
-    height: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  /* line 86, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) {
-    left: 0;
-    bottom: 0;
-    top: 0;
-    border-right: 1px solid #FFF;
-  }
-  /* line 93, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(2) {
-    right: 0;
-    bottom: 50%;
-    top: 0;
-    border-left: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
-  }
-  /* line 101, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(3) {
-    right: 0;
-    bottom: 0;
-    top: 50%;
-    border-left: 1px solid #FFF;
-    border-top: 1px solid #FFF;
-  }
-}
-@media (min-width: 950px) {
-  /* line 112, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage #content > .wrapper {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  /* line 120, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights {
-    height: 57vh;
-  }
-  /* line 123, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight {
+    margin: 0 20px;
     width: auto;
-  }
-  /* line 127, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) {
-    left: 0;
-    bottom: 0;
-    top: 0;
-    right: 40%;
-  }
-  /* line 133, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) > div {
-    text-align: left;
-  }
-  /* line 136, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) > div .highlight-text {
-    font-size: 3.75em;
-  }
-  /* line 139, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) > div .highlight-text:before {
-    display: inline;
-    font-size: 1em;
-  }
-  /* line 147, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(2) {
-    right: 0;
-    bottom: 50%;
-    top: 0;
-    left: 60%;
-  }
-  /* line 154, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(3) {
-    right: 0;
-    bottom: 0;
-    top: 50%;
-    left: 60%;
-  }
-}
-@media (min-width: 1280px) {
-  /* line 164, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage #content > .wrapper {
-    border-right: 1px solid #000;
-    border-left: 1px solid #000;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  /* line 173, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) {
-    right: 35%;
-  }
-  /* line 176, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) > div {
-    text-align: left;
-  }
-  /* line 179, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(1) > div .highlight-text {
-    font-size: 4.75em;
-  }
-  /* line 185, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(2) {
-    left: 65%;
-  }
-  /* line 189, sass/page-templates/_frontpage.scss */
-  .page-template-frontpage .home-page-highlights .highlight:nth-child(3) {
-    left: 65%;
   }
 }
 

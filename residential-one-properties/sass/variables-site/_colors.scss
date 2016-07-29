@@ -1,40 +1,47 @@
-$color__brand-1: #c6883f; // Light Brown
-$color__brand-2: #754100; // Dark Brown
-$color__brand-3: #231f20; // Black
+$color__brand-2: #c6883f; // Light Brown
+$color__brand-1: #754100; // Dark Brown
+$color__brand-3: #754100; // Black
+$color__brand-7: #231f20; // Black
 $color__brand-4: #6d6e70; // Dark Gray
 $color__brand-5: #bbbdc0; // Dark Gray
+$color__brand-2-tinted: #c6883f; // DRILL PAGES TINTED GREEN
 
-//#bbbdc0
-// LINKS
-$color__link: lighten($color__brand-1, 50%);
-$color__link-visited: $color__brand-1;
-$color__link-hover: $color__brand-1;
 
-// BACKGROUNDS
-$color__background-body: $color__brand-3;
+$color__background-body: $color__brand-7;
 $color__background-screen: #f1f1f1;
 $color__background-hr: $color__brand-2;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__background-alt: #e5e5e5;
 
-// BUTTONS
-$color__background-button: $color__brand-1;
-$color__border-button: $color__brand-1;
-$color__border-button-hover: $color__brand-1;
-$color__border-button-focus: $color__brand-1;
-
-// TEXT
-$color__text-main: #000;
-$color__text-alt: $color__brand-4;
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
+$color__text-main: #000;
+$color__text-alt: $color__brand-4;
 
-// BORDERS
+// Links
+$color__link_green: $color__brand-4;
+$color__link: $color__brand-2;
+$color__link-visited: $color__brand-2;
+$color__link-hover: $color__brand-2;
+
+// Floor Plans
+$floorplan__grey: $color__brand-4;
+$floorplan__link-a: $floorplan__grey;
+$floorplan__link-active: $color__brand-1;
+$floorplan__link-hover: #000;
+
+// Buttons
+$color__background-button: $color__brand-2;
+$color__border-button: $color__brand-2;
+$color__border-button-hover: $color__brand-2;
+$color__border-button-focus: $color__brand-2;
+
 $color__border-input: #ccc;
 $color__border-abbr: #666;
 
-// #71abc9 -blue
-// #144733 -green
-// ##A8A8A8 -grey
+
+$white: #ffffff; //White
+$black: #000000; //Black
+$front__page_links: rgb(109, 110, 113);

@@ -1,7 +1,15 @@
 .page-template-frontpage {
 	#masthead {
+		background-color: $white;
 		&:after {
 			height: 0;
+		}
+		.menu-item a {
+			color: $front__page_links;
+			font-family: ralewayregular;
+		}
+		.masthead-tel {
+			color: $color__brand-2;
 		}
 	}
 

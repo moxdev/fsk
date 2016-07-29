@@ -7,6 +7,7 @@
 	#floor-plan-listing {
 		padding-bottom: 20px;
 		padding-top: 20px;
+		font-family: ralewaymedium;
 
 		#plan-nav {
 			margin: 0 0 3em;
@@ -29,16 +30,15 @@
 			}
 
 			a {
-				color: $color__text-alt;
+				color: $floorplan__link-a;
 				text-decoration: none;
-				font-family: ralewaymedium;
 
 				&:hover, &.active {
 					text-decoration: underline;
 				}
 
 				&.active {
-					color: $color__brand-1;
+					color: $floorplan__link-active;
 				}
 			}
 		}
@@ -48,14 +48,24 @@
 			display: none;
 			transition:opacity .25s;
 			opacity: 0;
+			color: $floorplan__grey;
+			font-family: ralewaylight;
 
 			&.active {
 				opacity:1;
-				color:$color__text-alt;
+			}
+
+			span {
+				display: block;
 			}
 
 			h3 {
-				color: $color__brand-1;
+				font-family: ralewaymedium;
+				color: $color__brand-3;
+			}
+			.sq-ft {
+				color: $floorplan__link-a;
+
 			}
 
 			.plan-img {
@@ -124,11 +134,6 @@
 				& > div {
 					padding:30px 60px;
 					max-width: 710px;
-				}
-				#plan-nav {
-					font-size: .83em;
-					margin: 0;
-					justify-content: none;
 				}
 			}
 

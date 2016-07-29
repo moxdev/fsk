@@ -1,5 +1,14 @@
 .page-template-page-contact {
-	color:$color__text-alt;
+	color:$black;
+
+    #alt-menu .current_page_item > a {
+        background-color: $color__brand-2;
+        color: $white;
+    }
+    #alt-menu .current_page_item > a:hover {
+        background-color: $color__brand-3;
+        // color: $black;
+    }
 
 	#content {
 		background-color: $color__background-alt;

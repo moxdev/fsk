@@ -2,20 +2,19 @@
 	@include font-size(.75);
 	text-align: center;
 	padding-top: 10px;
-	background-color: $color__brand-3;
+	background-color: $color__brand-7;
 	color: $color__brand-5;
 
 	&:before {
 		content: '';
 		display: block;
 		height: 2px;
-		background-color: #6d6e70;
+		background-color: $color__brand-4;
 	}
 
 	.wrapper {
 		padding-top: 10px;
 		padding-bottom: 10px;
-
 	}
 
 	a {
@@ -61,7 +60,7 @@
 		.cls-1 {
 			fill: $color__brand-5;
 		}
- 	}
+	}
 
 	#res-one-link {
 		text-transform:lowercase;
@@ -108,10 +107,6 @@
 			float: right;
 			clear: right;
 			margin-top: 2em;
-		}
-
-		svg {
-			fill: $color__brand-4;
 		}
 	}
 

@@ -1,103 +1,156 @@
 #masthead {
-	background-color: #fff;
-	padding-top: 10px;
-	color: $color__brand-4;
+    background-color: #FFF;
+    padding-top: 10px;
+    color: $color__brand_3;
 
-	&:after {
-		content: '';
-		display: block;
-		height: 1px;
-		background-color: $color__brand-2;
-	}
+    &:after {
+        content: '';
+        display: block;
+        height: 1px;
+        background-color: $color__brand_3;
+    }
 
-	.wrapper {
-		padding-bottom: 20px;
-	}
+    .flex {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+        .flex-item {
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            position: relative;
+        }
+    }
 
-	.site-branding {
-		width: 55%;
-		max-width: 225px;
+    .wrapper {
+        padding-bottom: 10px;
+    }
 
-		.custom-logo {
-			display: block;
-		}
+    .site-branding {
+        width: 55%;
+        max-width: 225px;
 
-		.custom-logo-link {
-			display: block;
-			padding-bottom: 30px;
-		}
-	}
+        .custom-logo {
+            display: block;
+        }
 
-	.masthead-tel {
-		float: right;
-		font-family:$font__main-bold;
-		font-size: .875em;
-		color: $color__brand-1;
-		padding-bottom: 10px;
-		padding-top: 3.6em;
+        .custom-logo-link {
+            display: block;
+        }
+    }
 
-		span {
-			font-family: $font__main-alt-2;
-			display: none;
-		}
-	}
+    .download-link, .alt-download-link {
+        float: right;
+        display: none;
+        #download-icon, #alt-download-icon {
+            display: none;
+        }
+    }
 
-	.flex {
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display:flex;
-		-webkit-flex-direction: row;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		-webkit-flex-wrap: nowrap;
-		-ms-flex-wrap: nowrap;
-		flex-wrap: nowrap;
-		-ms-flex-pack: justify;
-		align-content: space-around;
-		-ms-flex-align: baseline;
-		align-items:baseline;
+    .masthead-tel, .alt-masthead-tel {
+        float: right;
+        font-family: ralewaymedium;
+        font-size: .875em;
+        color: $color__brand-2;
+        span {
+            display: none;
+        }
+        .mast-phone {
+            font-family: ralewaybold;
+        }
+    }
 
-		.flex-item {
-			-ms-flex: 1 1 auto;
-			flex: 1 1 auto;
-		}
-	}
+    @include respond-to(x-small) {
+        #masthead .flex {
+            align-self: flex-start;
+        }
+        .masthead-tel, .alt-masthead-tel {
+            font-size: 1em;
+        }
+    }
 
-	@include respond-to(x-small) {
-		.masthead-tel {
-			font-size: 1em;
-		}
-	}
+    @include respond-to(small) {
+        .flex {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display:flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -ms-flex-pack: justify;
+            align-content: space-around;
+            -ms-flex-align: baseline;
+            align-items:baseline;
+            .flex-item {
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+                position: relative;
+            }
+        }
 
-	@include respond-to(small) {
-		.site-branding {
-			max-width: 275px;
-		}
+        .site-branding {
+            max-width: 275px;
+        }
 
-		.masthead-tel {
-			span {
-				display: inline;
-			}
-		}
-	}
+        .masthead-tel, .alt-masthead-tel {
+            span {
+                display: inline;
+            }
+        }
+        .alt-masthead-tel {
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+        .download-link {
+            display: inline;
+            margin-left: 20px;
+            font-family:$font__main-bold;
+            font-size: .675em;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color__brand-7;
+            #download-icon {
+                display: inline;
+                width: 1.5em;
+                margin-left: 10px;
+            }
+        }
+        .alt-download-section {
+            position: absolute;
+            right: 0;
+            top: 2.2em;
+            // @include admin_sticky_fix(20);
+        }
+        .alt-download-link {
+            margin-right: 2em;
+            display: inline;
+            font-family:$font__main-bold;
+            font-size: .675em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color__brand-7;
+            #alt-download-icon {
+                display: inline;
+                width: 1.5em;;
+            }
+        }
+    }
 
-	@include respond-to(large) {
-		padding-top: 25px;
+    @include respond-to(large) {
+        padding-top: 25px;
 
-		.site-branding {
-			padding-bottom: 5px;
-			max-width: 300px;
-
-			.custom-logo-link {
-				padding-bottom: 0;
-			}
-		}
-		.flex-item {
-			position: relative;
-
-			.masthead-tel {
-				padding-top: 0;
-			}
-		}
-	}
+        .site-branding {
+            padding-bottom: 5px;
+            max-width: 300px;
+        }
+        .alt-masthead-tel {
+            margin-top: 0;
+        }
+    }
 }

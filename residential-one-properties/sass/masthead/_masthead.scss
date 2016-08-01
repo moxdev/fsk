@@ -103,8 +103,8 @@
             }
         }
         .alt-masthead-tel {
-            margin-top: 70px;
-            margin-bottom: 20px;
+            margin-top: 20px;
+            clear:both;
         }
         .download-link {
             display: inline;
@@ -124,11 +124,8 @@
         .alt-download-section {
             position: absolute;
             right: 0;
-            top: 2.2em;
-            // @include admin_sticky_fix(20);
         }
         .alt-download-link {
-            margin-right: 2em;
             display: inline;
             font-family:$font__main-bold;
             font-size: .675em;
@@ -149,8 +146,17 @@
             padding-bottom: 5px;
             max-width: 300px;
         }
+
+        .alt-download-section {
+            padding-bottom: 60px;
+        }
+
+        .alt-navigation {
+            clear: both;
+        }
         .alt-masthead-tel {
             margin-top: 0;
+            clear: none;
         }
     }
 }

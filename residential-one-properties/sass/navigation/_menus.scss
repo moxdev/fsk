@@ -301,7 +301,7 @@
 		position: relative;
 		letter-spacing: .03125em;
 		color:#FFF;
-		text-shadow:2px 2px 4px rgba(0, 0, 0, .8);
+		text-shadow:2px 2px 2px rgba(0, 0, 0, .5);
 
 		&:before {
 			font-size: 1.75em;
@@ -347,7 +347,7 @@
 	a {
 		text-decoration: none;
 		font-size: .8125em;
-		background-color: $color__brand-3;
+		background-color: $color__brand-7;
 		padding: .25em .6125em;
 		color: #FFF;
 	}

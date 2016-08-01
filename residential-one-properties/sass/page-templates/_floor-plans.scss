@@ -4,13 +4,27 @@
 		max-width: none;
 	}
 
+	.floorplan-download-section {
+		font-size: 1.2em;
+		margin: 1em auto;
+		a {
+			text-decoration: none;
+			color: $color__brand-7;
+			text-transform: uppercase;
+			font-family: ralewaybold;
+			padding-bottom: 10px;
+		}
+		svg {
+			width: 30px;
+		}
+	}
+
 	#floor-plan-listing {
 		padding-bottom: 20px;
 		padding-top: 20px;
 		font-family: ralewaymedium;
 
 		#plan-nav {
-			margin: 0 0 3em;
 			padding: 0;
 			list-style: none;
 			display: -ms-flexbox;
@@ -82,6 +96,10 @@
 	}
 
 	@include respond-to(medium) {
+
+		#plan-nav {
+			margin: 0 0 3em;
+		}
 		.flex {
 			display: -ms-flexbox;
 			display: -webkit-flex;

@@ -269,6 +269,15 @@ function residential_one_properties_page_header() {
 			if($on_page_title) { ?>
 			<header class="entry-header">
 				<h1 class="entry-title"><?php echo $on_page_title; ?></h1>
+
+				<?php if(is_page_template('page-floor-plans.php')): ?>
+
+					<div class="floorplan-download-section">
+					    <a class="floorplan-download-link" href="<?php echo esc_url( home_url( '/' ) ); ?>download/Application.pdf" download="Application.pdf"><span><svg id="floorplan-download-icon" data-name="alt floorplan icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26.51 27.26"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#231f20;}</style><clipPath id="clip-path" transform="translate(-269 -404.74)"><rect class="cls-1" x="269" y="404.74" width="26.51" height="27.26"/></clipPath></defs><title>download icon</title><g class="cls-2"><path class="cls-3" d="M284,416.37H274a0.47,0.47,0,1,0,0,.94h10a0.47,0.47,0,0,0,0-.94m0-3.77H274a0.47,0.47,0,1,0,0,.93h10a0.47,0.47,0,0,0,0-.93M288,430a0.51,0.51,0,0,1-.51.51h-9.29l-0.84.27a1.71,1.71,0,0,1-.52.08,1.59,1.59,0,0,1-1-.35H271a0.51,0.51,0,0,1-.51-0.51V408.52A0.51,0.51,0,0,1,271,408H273v0.81a0.51,0.51,0,0,0,1,0V408h2.93v0.81a0.51,0.51,0,1,0,1,0V408h2.55v0.81a0.51,0.51,0,1,0,1,0V408h2.81v0.81a0.51,0.51,0,1,0,1,0V408h2.17a0.51,0.51,0,0,1,.51.51v3.54l1.53-1.53v-2a2,2,0,0,0-2-2h-2.17v-1.23a0.51,0.51,0,1,0-1,0v1.23H281.5v-1.23a0.51,0.51,0,0,0-1,0v1.23h-2.55v-1.23a0.51,0.51,0,0,0-1,0v1.23H274v-1.23a0.51,0.51,0,1,0-1,0v1.23H271a2,2,0,0,0-2,2V430a2,2,0,0,0,2,2H287.5a2,2,0,0,0,2-2v-7.43L288,424.06V430Zm0.48-15a0.38,0.38,0,0,0-.54,0l-7.87,7.87a0.38,0.38,0,0,0,.54.54l7.87-7.87a0.38,0.38,0,0,0,0-.54m-7,12.32-2.61-2.61-0.7,2.2,1.11,1.11Zm7.17-14,4.23,4.24-10.1,10.1a0.81,0.81,0,0,1-.35.22l-0.06,0-5.27,1.68a0.36,0.36,0,0,1-.47-0.47l1.68-5.27,0-.06a0.79,0.79,0,0,1,.22-0.36l1.9-1.9H274a0.47,0.47,0,1,1,0-.94h7.35Zm6.46,2-1.52,1.52-4.24-4.23,1.52-1.52a1.15,1.15,0,0,1,1.61-.13l2.76,2.76a1.15,1.15,0,0,1-.13,1.61" transform="translate(-269 -404.74)"/></g></svg></span>download application</a>
+					</div>
+
+				<?php endif; ?>
+
 			</header><!-- .entry-header -->
 		<?php } else { ?>
 			<header class="entry-header">
